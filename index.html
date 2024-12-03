@@ -7,31 +7,57 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
+    <header>
+      <p class="logo">Weather.com</p>
+    </header>
 
-    <main>
-        <header>
-          <h1>Weather App</h1>
-        </header>
+    <form class="search" role="search">
+      <input
+        type="search"
+        id="city-search"
+        name="city-search"
+        placeholder="Enter City Name"
+        aria-label="Search for a city"
+      />
+      <button type="submit" class="search-btn" aria-label="Search">
+        <span class="material-icons" aria-hidden="true">search</span>
+      </button>
+    </form>
 
-        <section class = "search">
-          <input type="text" placeholder="Enter City Name" />
-          <button class="search-btn">
-            <i class="material-icons">search</i>
-          </button>
-        </section>
-
-        <section class="weather">
-          <p id="weather-result">In Gothenburg its ☀️ Sunny!</p>
-        </section>
+    <main class="weather-card">
+      <div class="weather-info">
+        <span
+          id="weather-emoji"
+          role="img"
+          aria-label="Current weather condition"
+          >☀️</span
+        >
+        <div class="weather-details">
+          <h1>Sunny</h1>
+          <p id="weather-result">Gothenburg</p>
+        </div>
+      </div>
     </main>
+
+    <section class="search-history">
+      <h2 class="recent-title">Recent Searches</h2>
+      <ul>
+        <li>Gothenburg</li>
+        <li>Stockholm</li>
+        <li>Uppsala</li>
+        <li>Malmö</li>
+      </ul>
+    </section>
 
     <script src="script.js"></script>
   </body>
