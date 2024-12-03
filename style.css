@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Inter, sans-serif;
-  background-image: url("imgs/weather-app-bg.png");
+  background-image: url("imgs/background.jpg");
   background-size: cover;
   color: var(--color-white);
   padding: 4% 6%;
